@@ -34,3 +34,6 @@ mkdir build && cd build
 cmake .. && make
 ./1C_Contest
 ```
+
+### **Тестирование**
+Программа интерактивна.
