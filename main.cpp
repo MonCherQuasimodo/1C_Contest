@@ -8,7 +8,13 @@ void solve() {
     std::string filename;
     std::cin >> filename;
 
-    std::ifstream file(filename);  //Errors
+    std::ifstream file(filename);
+    if (file.fail()) {
+        std::cout << "Some error with opening file, remember: current directory - build\n";
+        std::cout << "Put full path or use ../ or place file.txt in build folder\n";
+        std::cout << "Sorry :(\n";
+        return;
+    }
 
     Solution<DataBaseUnMap> solution(file);
 
